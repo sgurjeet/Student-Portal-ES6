@@ -1,0 +1,104 @@
+<!doctype html>
+<head>
+    <head>
+        <title>Student Details</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"></link>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link href="css/styles.css" rel="stylesheet" type="text/css"></link>
+        <script src="js/main.js"></script>
+    </head>
+    <body>
+        <div class="jumbotron" align="center">
+            <img src="C:\Users\GURJEET SINGH\Downloads\todo-es6-master\todo-es6-master\chitkaraadj.png" 
+            alt="path incorrect" class="logo-img" height="12%" width="20%">
+            <h1>Student Details</h1>
+        </div>
+
+        <div class="container" align="center">
+            <div class="container">
+                <h3>
+                    Enter Details
+                </h3>
+            </div>
+            <form class="form-inline" id="mainForm">
+                <div class="form-group">
+                    <div class="col-sm-3">
+                        <input type="text" name="name" class="form-control" id="formName" placeholder="Name" />
+                    </div>
+                    <div class="col-sm-3">
+                        <input type="number" name="rollNo" class="form-control" id="formRollNO" placeholder="Roll No" />
+                    </div>
+                    <div class="col-sm-3">
+                        <input type="number" name="passoutYear" class="form-control" id="formPassoutYear" placeholder="Passout Year" />
+                    </div>
+                    <div class="col-sm-3">
+                        <input type="text" name="Stream" class="form-control" id="formStream" placeholder="Stream" />
+                    </div>
+                </div>
+            </form>
+            <br />
+            <div class="row">
+                    <div class="col-sm-4">
+                        <button type="button" class="btn btn-success" id="submit_button">Submit</button>
+                    </div>
+                    <div class="col-sm-4">
+                        <button type="button" class="btn btn-primary" id="editButton">Edit Details</button>
+                    </div>
+                    <div class="col-sm-4">
+                        <button type="button" class="btn btn-danger" id="deleteButton">Delete</button>
+                    </div>
+            </div>
+            <br />
+            <div class="row">
+                <table class="table table-border" id="table1">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Roll No.</th>
+                            <th>Passout Year</th>
+                            <th>Stream</th>
+                            <th>Select</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="modal" tabindex="-1" id="editDataModal" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>Edit details</h3>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4><span class="glyphicon glyphicon-lock"></span></h4>
+                    </div>
+                    <div class="modal-body">
+                        <form role="form" id="editLoadDetails">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="nameDetails" placeholder="Name"/>
+                            </div>
+                            <div class="form-group">
+                                <input type="number" class="form-control" id="rollNoDetails" placeholder="Roll No" />
+                            </div>
+                            <div class="form-group">
+                                <input type="number" class="form-control" id="passoutYearDetails" placeholder="Passout Year" />
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="streamDetails" placeholder="Stream" />
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success btn-block" id="submitModal"><span class="glyphicon glyphicon-off"></span>Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</head>

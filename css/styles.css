@@ -1,0 +1,24 @@
+.jumbotron{
+    background: linear-gradient(to right, #929292, #e0e0e0);
+}
+
+.modal-body{
+    padding: 40px 50px;
+}
+
+.modal-header{
+    padding: 35px 50px;
+}
+
+th, td{
+    text-align: center;
+}
+
+body{
+    font-family: "Comic Sans MS";
+}
+.logo-img{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
